@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanchay Kumar Sivakumar — Co-Founder</title>
+  <meta name="description" content="Sanchay Kumar Sivakumar — Co-Founder. Portfolio and links." />
+
+  <!-- Social preview (shows when the link is shared in DMs / stories) -->
+  <meta property="og:title" content="Sanchay Kumar Sivakumar — Co-Founder" />
+  <meta property="og:description" content="Co-Founder | Portfolio and links" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #0d0d10;
+      --card: #16161c;
+      --text: #f5f5f7;
+      --muted: #9a9aa5;
+      --accent-1: #f58529;
+      --accent-2: #dd2a7b;
+      --accent-3: #8134af;
+      --accent-4: #515bd4;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border-radius: 24px;
+      padding: 40px 28px 32px;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Instagram-style gradient ring around the avatar */
+    .avatar-ring {
+      width: 132px;
+      height: 132px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(45deg, var(--accent-1), var(--accent-2), var(--accent-3), var(--accent-4));
+    }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 4px solid var(--card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--text);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .title-badge {
+      display: inline-block;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border-radius: 999px;
+      background: linear-gradient(45deg, var(--accent-1), var(--accent-2), var(--accent-3), var(--accent-4));
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .company {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .company strong { color: var(--text); }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .links a {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .links a:hover,
+    .links a:active {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f2f2f6;
+        --card: #ffffff;
+        --text: #1c1c22;
+        --muted: #6a6a75;
+      }
+      .card { box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12); }
+      .links a {
+        background: rgba(0, 0, 0, 0.04);
+        border-color: rgba(0, 0, 0, 0.08);
+      }
+      .links a:hover,
+      .links a:active { background: rgba(0, 0, 0, 0.08); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar-ring">
+      <!-- Replace the initials below with <img src="your-photo.jpg" alt="Sanchay Kumar Sivakumar" style="width:100%;height:100%;border-radius:50%;object-fit:cover;"> -->
+      <div class="avatar">SK</div>
+    </div>
+
+    <h1>Sanchay Kumar Sivakumar</h1>
+
+    <div class="title-badge">Co-Founder</div>
+
+    <!-- TODO: replace "Your Company" with your company's name -->
+    <p class="company">Co-Founder at <strong>Your Company</strong></p>
+
+    <nav class="links">
+      <!-- TODO: update these links with your real URLs -->
+      <a href="#" rel="noopener">🚀 Our Company</a>
+      <a href="#" rel="noopener">📄 My CV / Resume</a>
+      <a href="#" rel="noopener">💼 LinkedIn</a>
+      <a href="mailto:sanchaykumar2019@gmail.com">✉️ Contact Me</a>
+    </nav>
+
+    <footer>© 2026 Sanchay Kumar Sivakumar</footer>
+  </main>
+</body>
+</html>
