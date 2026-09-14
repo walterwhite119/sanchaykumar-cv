@@ -60,8 +60,10 @@ PATTERNS = [
      r"\bwhether you(?:'re| are)\b[^.?!\n]{0,60}\bor\b"),
     ("rhetoric", "anaphora filler", "B",
      r"\b(\w+) (?:matters|counts)\.\s+\1?\s*(?:It|They)\b"),
+    # Lowercase-only: an uppercase triple is almost always a three-author
+    # citation ("Vosoughi, Roy and Aral"), not a tricolon.
     ("rhetoric", "rule of three (single-word list)", "C",
-     r"\b\w{3,12}, \w{3,12},? and \w{3,12}\b"),
+     r"(?-i:\b[a-z]{3,12}, [a-z]{3,12},? and [a-z]{3,12}\b)"),
 
     # --- Dead phrases ----------------------------------------------------
     ("dead_phrase", "it is important/worth noting", "A",
