@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanchay Kumar — Model</title>
+<meta name="description" content="Modeling portfolio of Sanchay Kumar: book, digitals, measurements and booking contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="brand" data-field="name">Sanchay Kumar</a>
+  <nav>
+    <a href="#book">Book</a>
+    <a href="#digitals">Digitals</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <figure class="hero-img">
+      <img data-src="images/hero.jpg" alt="Sanchay Kumar, lead portfolio image">
+    </figure>
+    <div class="hero-text">
+      <p class="eyebrow" data-field="tagline">Model · Based in —</p>
+      <h1 data-field="name">Sanchay Kumar</h1>
+      <dl class="stats" id="stats"></dl>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Book / Enquire</a>
+        <a class="btn ghost" id="compcard-link" href="compcard.pdf" download>Comp card (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="book" class="section">
+    <div class="section-head">
+      <h2>Book</h2>
+      <div class="filters" id="filters" role="tablist"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- DIGITALS -->
+  <section id="digitals" class="section">
+    <div class="section-head">
+      <h2>Digitals</h2>
+      <p class="note">Unretouched, natural light, no makeup. Updated <span data-field="digitalsUpdated">—</span>.</p>
+    </div>
+    <div class="digitals" id="digitals-grid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <h2>About</h2>
+    <div class="about-body">
+      <p data-field="bio">—</p>
+      <div class="cols">
+        <div>
+          <h3>Experience</h3>
+          <ul id="experience"></ul>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul id="skills"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <div class="contact-grid" id="contact-list"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> <span data-field="name">Sanchay Kumar</span></span>
+  <span>All images used with photographer credit & permission.</span>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
